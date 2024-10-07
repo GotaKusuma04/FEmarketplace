@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--Header Start-->
+    <header class="bg-transparent fixed top-0 left-0 w-full flex items-center z-10 pb-6 pt-5 shadow-lg">
+        <div class="container mx-auto">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="px-4">
+                    <a href="home" class="font-extrabold text-xl lg:text-3xl text-primary hover:text-hover hover:opacity-80 transition duration-200 ease-in-out block py-6">
+                        GoPrinting
+                    </a>
+                </div>
+                <!-- Search Bar -->
+                <div class="w-auto md:w-8/12 lg:w-1/2 h-auto p-2 rounded-3xl bg-gray-100 mx-auto">
+                    <!-- First Section (Search Bar Container) -->
+                    <section class="w-full h-10 flex items-center">
+                        <!-- Search icon container -->
+                        <span class="w-10 h-full ml-4 hidden md:flex items-center">
+                            <i class="ri-search-line text-xl text-primary"></i>
+                        </span>
+                        <!-- Input -->
+                        <input type="text" class="w-full h-full font-normal text-xs lg:text-base md:pl-2 pl-2 lg:pl-2 focus:outline-none bg-gray-100" placeholder="Search Anyting..">
+                    </section>
+                </div>
+                <!-- Icon Dashboard -->
+                <div class="group flex items-center">
+                    <!-- Notifikasi -->
+                    <div class="flex items-center hover:bg-hover hover:text-white text-primary rounded-lg transition duration-200 ease-in-out">
+                        <span class="mx-2 lg:mx-4">
+                            <i class="ri-notification-2-line text-xl lg:text-2xl"></i>
+                        </span>
+                    </div>
+                    <!-- Cart -->
+                    <div class="flex items-center hover:bg-hover hover:text-white text-primary rounded-lg transition duration-200 ease-in-out">
+                        <span class="mx-2 lg:mx-4">
+                            <i class="ri-shopping-cart-line text-xl lg:text-2xl"></i>
+                        </span>
+                    </div>
+                    <!-- Message -->
+                    <div class="flex items-center hover:bg-hover hover:text-white text-primary rounded-lg transition duration-200 ease-in-out">
+                        <span class="mx-2 lg:mx-4">
+                            <i class="ri-chat-4-line text-xl lg:text-2xl"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="flex items-center mx-auto">
+                    <div class="w-2 h-12 border-r border-gray-300"></div>
+                </div>
+                <!-- Profile -->
+                <a href="#" class="mx-2 flex flex-row justify-center items-center text-primary hover:text-hover transition duration-200 ease-in-out">
+                    <img src="dist/img/Profil.svg" alt="" class="max-w-[50px]">
+                    <span class="hidden lg:inline mx-4 font-normal
+                    text-sm">Nyoman<span class="block text-lg font-semibold">Gotama</span></span>
+                </a>                
+            </div>
+        </div>
+    </header>
+    <!--Header End-->
+
+    <!-- Main Start -->
+    <section class="pt-36">
+        <div class="container p-8">
+            <!-- Judul Section Start -->
+            <div class="w-full px-4 pt-8">
+                <div class="max-w-xl mx-auto text-center mb-24">
+                    <h1 class="font-extrabold uppercase text-primary text-xl lg:text-2xl my-4">Selamat Datang di GoPrinting</h4>
+                    <p class="text-sm lg:text-base text-primary font-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <!-- Judul Section End -->
+            <!-- Foto Slide Start -->
+            <div class="flex justify-center">
+                <div class="relative w-full h-40 overflow-hidden rounded-3xl shadow-lg text-center">
+                    <!-- Slide Items -->
+                    <div id="slides" class="flex transition-transform duration-500 ease-in-out transform">
+                        <img src="dist/img/tes 1.jpg" alt="Slide 1" class="w-full object-cover object-center">
+                        <img src="dist/img/tes 2.jpg" alt="Slide 2" class="w-full object-contain">
+                        <img src="dist/img/tes 3.jpg" alt="Slide 3" class="w-full object-contain">
+                    </div>
+            
+                    <!-- Tombol Navigasi -->
+                    <button id="prev" class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full focus:outline-none">
+                        &#10094;
+                    </button>
+                    <button id="next" class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full focus:outline-none">
+                        &#10095;
+                    </button>
+                </div>               
+            </div>
+            <!-- Foto Slide End -->
+
+        </div>
+    </section>
+    <!-- Main End -->
+
+     <!-- Footer Start -->
+     <footer class="bg-primary p-36">
+        <div class="container mx-auto">
+            <div class="flex lg:flex-col flex-row justify-center items-center ">
+                <div class="relative">
+                    <a href="home" class="font-light text-base text-white hover:text-hover lg:mx-8">Home</a>
+                    <a href="services" class="font-light text-base text-white hover:text-hover lg:mx-8">Services</a>
+                    <a href="features" class="font-light text-base text-white hover:text-hover lg:mx-8">Features</a>
+                    <a href="market" class="font-light text-base text-white hover:text-hover lg:mx-8">Market</a>
+                    <a href="about" class="font-light text-base text-white hover:text-hover lg:mx-8">About</a>
+                    <a href="about" class="font-light text-base text-white hover:text-hover lg:mx-8">Hubungi Kami</a>
+                </div>
+                <div class="flex items-center justify-center my-8">
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/nyoman_gotama/" role="_blank" class="w-9 h-9 mx-6 rounded-full flex justify-center items-center border border-slate-400 text-slate-300 hover:bg-hover hover:border-hover transition duration-300 ease-in-out hover:text-white">
+                        <svg role="img" width="20" fill="" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <title>Instagram</title>
+                            <path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg>
+                    </a>
+                    <!-- Whatsapp -->
+                    <a href="" role="" class="w-9 h-9 mx-4 rounded-full flex justify-center items-center border border-slate-400 text-slate-300 hover:bg-hover hover:border-hover transition duration-300 ease-in-out hover:text-white" >
+                        <svg version="1.0" width="22" class="fill-current" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512.000000 512.000000"
+                            preserveAspectRatio="xMidYMid meet">
+                            <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                            stroke="none">
+                            <path d="M2375 5114 c-386 -37 -677 -121 -993 -284 -482 -250 -871 -647 -1112
+                            -1135 -93 -187 -136 -302 -185 -486 -60 -232 -78 -373 -79 -629 0 -128 5 -266
+                            12 -320 55 -410 183 -763 398 -1093 l72 -111 -159 -469 c-88 -259 -158 -471
+                            -156 -473 2 -2 220 66 486 151 266 85 487 155 492 155 4 0 45 -23 91 -52 46
+                            -28 142 -80 213 -114 647 -309 1386 -336 2048 -73 750 297 1326 948 1532 1730
+                            63 240 78 371 78 649 0 278 -15 409 -78 649 -242 917 -977 1630 -1905 1847
+                            -156 36 -318 55 -515 58 -110 2 -218 2 -240 0z m-610 -1186 c17 -9 40 -33 52
+                            -55 29 -53 273 -638 280 -674 9 -45 -36 -122 -135 -234 -104 -117 -126 -154
+                            -117 -196 17 -76 248 -383 391 -518 221 -209 555 -408 704 -419 77 -5 104 16
+                            222 172 53 71 109 142 126 158 38 39 95 47 160 23 82 -31 585 -276 621 -303
+                            l34 -25 -6 -106 c-14 -272 -110 -413 -362 -536 -240 -117 -428 -114 -795 13
+                            -494 171 -755 334 -1110 691 -178 178 -304 329 -448 536 -238 340 -329 603
+                            -302 870 22 214 97 372 248 523 73 73 168 103 312 98 61 -2 106 -8 125 -18z"/>
+                            </g>
+                        </svg>
+                    </a>
+                    <!-- Github -->
+                    <a href="https://github.com/GotaKusuma04" role="_blank" class="w-9 h-9 mx-6 rounded-full flex justify-center items-center border border-slate-400 text-slate-300 hover:bg-hover hover:border-hover transition duration-300 ease-in-out hover:text-white">
+                        <svg role="img" width="25" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                    </a>
+                </div>
+                <div class="my-2">
+                    <h1 class="font-light text-base text-slate-300">@2023 GoPrinting, Develope with 🤍</h1>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <script src="dist/js/script2.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>

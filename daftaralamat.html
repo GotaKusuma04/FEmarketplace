@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Alamat</title>
+    <link href="dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header Starrt -->
+    <header class="bg-transparent fixed top-0 left-0 w-full flex items-center z-10 pb-6 pt-5 shadow-lg">
+        <div class="container mx-auto">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="px-4">
+                    <a href="produk.html" class="font-extrabold text-xl lg:text-3xl text-primary hover:text-hover hover:opacity-80 transition duration-200 ease-in-out block py-6">
+                        GoPrinting
+                    </a>
+                </div>
+                <!-- Search Bar -->
+                <div class="w-auto md:w-8/12 lg:w-1/2 h-auto p-2 rounded-3xl bg-gray-100 mx-auto">
+                    <!-- First Section (Search Bar Container) -->
+                    <section class="w-full h-10 flex items-center">
+                        <!-- Search icon container -->
+                        <span class="w-10 h-full ml-4 hidden md:flex items-center">
+                            <i class="ri-search-line text-xl text-primary"></i>
+                        </span>
+                        <!-- Input -->
+                        <input type="text" class="w-full h-full font-normal text-xs lg:text-base md:pl-2 pl-2 lg:pl-2 focus:outline-none bg-gray-100" placeholder="Search Anyting..">
+                    </section>
+                </div>
+                <!-- Icon Dashboard -->
+                <div class="group flex items-center">
+                    <!-- Notifikasi -->
+                    <div class="flex items-center hover:bg-hover hover:text-white text-primary rounded-lg transition duration-200 ease-in-out">
+                        <span class="mx-2 lg:mx-4">
+                            <i class="ri-notification-2-line text-xl lg:text-2xl"></i>
+                        </span>
+                    </div>
+                    <!-- Cart -->
+                    <div class="flex items-center hover:bg-hover hover:text-white text-primary rounded-lg transition duration-200 ease-in-out">
+                        <span class="mx-2 lg:mx-4">
+                            <i class="ri-shopping-cart-line text-xl lg:text-2xl"></i>
+                        </span>
+                    </div>
+                    <!-- Message -->
+                    <div class="flex items-center hover:bg-hover hover:text-white text-primary rounded-lg transition duration-200 ease-in-out">
+                        <span class="mx-2 lg:mx-4">
+                            <i class="ri-chat-4-line text-xl lg:text-2xl"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="flex items-center mx-auto">
+                    <div class="w-2 h-12 border-r border-gray-300"></div>
+                </div>
+                <!-- Profile -->
+                <a href="#" class="mx-2 flex flex-row justify-center items-center text-primary hover:text-hover transition duration-200 ease-in-out">
+                    <img src="dist/img/Profil.svg" alt="" class="max-w-[50px]">
+                    <span class="hidden lg:inline mx-4 font-normal
+                    text-sm">Nyoman<span class="block text-lg font-semibold">Gotama</span></span>
+                </a>                
+            </div>
+        </div>
+    </header>
+    <!--Header End-->
+
+    <!-- Isi Start -->
+    <section class="pt-36">
+        <div class="container mx-auto p-8">
+            <div class="flex pt-8">
+                <!-- Sidebar Start -->
+                <div class="w-1/5 h-full py-2 rounded-lg shadow-lg bg-white">
+                    <!-- Profil Start -->
+                    <a href="" class="flex items-center pb-4 mx-6 mt-8 text-primary hover:text-hover transition duration-150 ease-in-out">
+                        <img src="dist/img/Profil.png" alt="" class="w-1/3">
+                        <h1 class="font-semibold text-sm mx-2">Nyoman</h1>
+                    </a>
+                    <!-- Profil End -->
+                    <hr class="w-10/12 mx-auto">
+                    <!-- Kotak Masuk Start -->
+                    <ul class="mt-4">
+                        <li class="mb-1 group mx-4">
+                            <a href="#" class="flex items-center py-2 px-4 text-primary hover:text-hover transition duration-300 ease-in-out rounded-md group-[.active]:text-white group-[.selected]:text-hover sidebar-dropdown-toggle">
+                                <span class="font-semibold text-sm">Kotak Masuk</span>
+                                <i class="ri-arrow-right-s-line ml-auto group-[.selected]:rotate-90"></i>
+                            </a>
+                            <ul class="pl-7 mt-2 hidden group-[.selected]:block">
+                                <li class="mb-4">
+                                    <a href="#" class="text-gray-500 font-normal text-sm flex items-center hover:text-hover before:contents-[''] before:w-1 before:h-1 before:rounded-full before:bg-gray-300 before:mr-3">Chat</a>
+                                </li>
+                                <li class="mb-4">
+                                    <a href="#" class="text-gray-500 font-normal text-sm flex items-center hover:text-hover before:contents-[''] before:w-1 before:h-1 before:rounded-full before:bg-gray-300 before:mr-3">Diskusi Produk</a>
+                                </li>
+                                <li class="mb-4">
+                                    <a href="#" class="text-gray-500 font-normal text-sm flex items-center hover:text-hover before:contents-[''] before:w-1 before:h-1 before:rounded-full before:bg-gray-300 before:mr-3">Ulasan</a>
+                                </li>
+                                <li class="mb-4">
+                                    <a href="#" class="text-gray-500 font-normal text-sm flex items-center hover:text-hover before:contents-[''] before:w-1 before:h-1 before:rounded-full before:bg-gray-300 before:mr-3">Pesanan Dikomplain</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mb-1 group mx-4">
+                            <a href="#" class="flex items-center py-2 px-4 text-primary hover:text-hover transition duration-300 ease-in-out rounded-md group-[.active]:text-white group-[.selected]:text-hover sidebar-dropdown-toggle">
+                                <span class="font-semibold text-sm">Pembelian</span>
+                                <i class="ri-arrow-right-s-line ml-auto group-[.selected]:rotate-90"></i>
+                            </a>
+                            <ul class="pl-7 mt-2 hidden group-[.selected]:block">
+                                <li class="mb-4">
+                                    <a href="#" class="text-gray-500 font-normal text-sm flex items-center hover:text-hover before:contents-[''] before:w-1 before:h-1 before:rounded-full before:bg-gray-300 before:mr-3">Daftar Transaksi</a>
+                                </li>
+                                <li class="mb-4">
+                                    <a href="#" class="text-gray-500 font-normal text-sm flex items-center hover:text-hover before:contents-[''] before:w-1 before:h-1 before:rounded-full before:bg-gray-300 before:mr-3">Menunggu Pembayaran</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mb-1 group mx-4">
+                            <a href="#" class="flex items-center py-2 px-4 text-primary hover:text-hover transition duration-300 ease-in-out rounded-md group-[.active]:text-white group-[.selected]:text-hover sidebar-dropdown-toggle">
+                                <span class="font-semibold text-sm">Profil Saya</span>
+                                <i class="ri-arrow-right-s-line ml-auto group-[.selected]:rotate-90"></i>
+                            </a>
+                            <ul class="pl-7 mt-2 hidden group-[.selected]:block">
+                                <li class="mb-4">
+                                    <a href="#" class="text-gray-500 font-normal text-sm flex items-center hover:text-hover before:contents-[''] before:w-1 before:h-1 before:rounded-full before:bg-gray-300 before:mr-3">Wishlist</a>
+                                </li>
+                                <li class="mb-4">
+                                    <a href="#" class="text-gray-500 font-normal text-sm flex items-center hover:text-hover before:contents-[''] before:w-1 before:h-1 before:rounded-full before:bg-gray-300 before:mr-3">Toko Favorit</a>
+                                </li>
+                                <li class="mb-4">
+                                    <a href="#" class="text-gray-500 font-normal text-sm flex items-center hover:text-hover before:contents-[''] before:w-1 before:h-1 before:rounded-full before:bg-gray-300 before:mr-3">Pengaturan</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- Kotak Masuk End -->
+                </div>
+                <!-- Sidebar End -->
+                <!-- Isi Start  -->
+                <div class="w-10/12 px-8">
+                    <!-- Username Start -->
+                    <div class="flex items-center">
+                        <i class="ri-user-line text-base font-medium text-gray-500 opacity-80"></i>
+                        <h1 class="text-lg font-bold ml-2 text-primary">Nyoman</h1>
+                    </div>
+                    <!-- Username End -->
+
+                    <!-- Main Profil Start -->
+
+                    <div class="w-full rounded-lg border border-gray-400 border-opacity-25 bg-white shadow-lg mt-6">
+                        <!-- Navbar Start -->
+                        <div class="flex gap-6 mx-4 items-center justify-center mt-4">
+                            <a href="profilcard.html" class="nav font-semibold text-gray-500 hover:text-primary text-sm cursor-pointer">Biodata Diri</a>
+                            <a href="daftaralamat.html" class="nav font-semibold text-gray-500 hover:text-primary text-sm cursor-pointer">Daftar Alamat</a>
+                            <a href="pembayaran.html" class="nav font-semibold text-gray-500 hover:text-primary text-sm cursor-pointer">Pembayaran</a>
+                            <a href="rekeningbank.html" class="nav font-semibold text-gray-500 hover:text-primary text-sm cursor-pointer">Rekening Bank</a>
+                            <a href="notifikasi.html" class="nav font-semibold text-gray-500 hover:text-primary text-sm cursor-pointer">Notifikasi</a>
+                            <a href="modetampilan.html" class="nav font-semibold text-gray-500 hover:text-primary text-sm cursor-pointer">Mode Tampilan</a>
+                            <a href="keamanan.html" class="nav font-semibold text-gray-500 hover:text-primary text-sm cursor-pointer">Keamanan</a>
+                        </div>
+                        <!-- Navbar End -->
+                        
+                        <hr class="w-full border border-gray-300/75 mt-4">
+
+                        <!-- Alamat -->
+                        <div class="container">
+                            <div class="relative pt-8 mx-6 flex items-center">
+                                <!-- Search Bar -->
+                                <div class="w-auto md:w-8/12 lg:w-1/2 px-2 py-1 rounded-lg bg-white border-2">
+                                <!-- First Section (Search Bar Container) -->
+                                    <section class="w-full h-10 flex items-center">
+                                        <!-- Search icon container -->
+                                        <span class="w-10 h-full ml-4 hidden md:flex items-center">
+                                            <i class="ri-search-line text-xl text-primary"></i>
+                                        </span>
+                                        <!-- Input -->
+                                        <input type="text" class="w-full h-full font-normal text-xs lg:text-base md:pl-2 pl-2 lg:pl-2 focus:outline-none bg-white" placeholder="Search">
+                                    </section>
+                                </div>
+                                <a href="#" class="absolute right-0 text-white bg-primary hover:bg-hover transition duration-150 ease-in-out rounded-lg px-4 py-2">
+                                    <i class="ri-add-line text-xs"></i>
+                                    <span class="font-semibold text-sm">Tambah Alamat Baru</span>
+                                </a>
+                            </div>
+                            <div class="flex w-full mx-6 pt-6 gap-4">
+                                <a href="#" class="relative px-4 py-2 rounded-lg bg-white border-2 border-primary/70 hover:bg-hover hover:border-hover transition duration-150 ease-in-out text-primary hover:text-white shadow-md">
+                                    <span class="text-sm font-medium">Semua Alamat</span>
+                                </a>
+                                <a href="#" class="relative px-8 py-2 rounded-lg bg-white border-2 border-primary/70 hover:bg-hover hover:border-hover transition duration-150 ease-in-out text-primary hover:text-white shadow-md">
+                                    <span class="text-sm font-medium">Dari Teman</span>
+                                </a>
+                            </div>
+                        </div>
+                            
+                    </div>
+
+
+                    <!-- Main Profil End -->
+                </div>
+                <!-- Isi End  -->
+            </div>
+
+        </div>
+    </section>
+    <!-- Isi End -->
+
+    <script src="dist/js/script2.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>

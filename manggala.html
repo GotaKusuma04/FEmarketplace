@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manggala Printing</title>
+    <link href="dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--Header Start-->
+    <header class="bg-transparent fixed top-0 left-0 w-full flex items-center z-10 py-6 lg:py-2 shadow-lg">
+        <div class="container">
+            <div class="flex items-center justify-between relative mx-4">
+                <!-- Logo -->
+                <div class="px-4">
+                    <a href="produk.html" class="hidden lg:inline font-extrabold text-xl lg:text-3xl text-primary hover:text-hover hover:opacity-80 transition duration-200 ease-in-out py-6">
+                        GoPrinting
+                    </a>
+                </div>
+
+                <div class="flex items-center px-4">
+                    <button id="hamburger" name="hamburger" type="button" class="block absolute left-4 lg:hidden">
+                        <span class="hamburger-line transition duration-300 origin-top-left"></span>
+                        <span class="hamburger-line transition duration-300"></span>
+                        <span class="hamburger-line transition duration-300 origin-bottom-left"></span>
+                    </button>
+
+                    <nav id="nav-menu" class="hidden absolute py-6 bg-white shadow-lg rounded-lg max-w-[250px] w-full left-3 top-full lg:block lg:relative lg:bg-transparent lg:top-0 lg:max-w-full lg:shadow-none lg:rounded-none lg:left-auto lg:mx-8">
+                        <ul class="block lg:flex">
+                            <li class="group">
+                                <a href="#" class="font-medium text-semibold text-primary lg:py-4 py-2 mx-8 lg:mx-2 flex hover:text-hover hover:opacity-80 transition duration-200 ease-in-out lg:text-sm">
+                                    <span class="mx-2 lg:mx-4">
+                                        <i class="ri-notification-2-line text-xl lg:text-2xl"></i>
+                                        <h1 class="lg:hidden md:inline inline text-center justify-center ml-2">Notifikasi</h1>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="group">
+                                <a href="#" class="font-medium text-semibold text-primary lg:py-4 py-4 mx-8 lg:mx-2 flex hover:text-hover hover:opacity-80 transition duration-200 ease-in-out lg:text-sm">
+                                    <span class="mx-2 lg:mx-4">
+                                        <i class="ri-shopping-cart-line text-xl lg:text-2xl"></i>
+                                        <h1 class="lg:hidden md:inline inline text-center justify-center ml-2">Keranjang</h1>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="group">
+                                <a href="#" class="font-medium text-semibold text-primary lg:py-4 py-2 mx-8 lg:mx-2 flex hover:text-hover hover:opacity-80 transition duration-200 ease-in-out lg:text-sm">
+                                    <span class="mx-2 lg:mx-4">
+                                        <i class="ri-chat-4-line text-xl lg:text-2xl"></i>
+                                        <h1 class="lg:hidden md:inline inline text-center justify-center ml-2">Chat</h1>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                <!-- Profile -->
+                <button id="toggle">
+                    <a href="profilcard.html" class="lg:mx-2 flex flex-row justify-center items-center text-left text-primary hover:text-hover transition duration-200 ease-in-out">
+                        <img src="dist/img/Profil.svg" alt="" class="max-w-[50px]">
+                        <span class="hidden lg:inline mx-4 font-normal
+                        text-sm">Nyoman<span class="block text-lg font-semibold ">Gotama</span></span>
+                    </a>                
+                </button>
+            </div>
+        </div>
+    </header>
+    <!--Header End-->
+
+    <!-- Main Start -->
+    <section class="pt-12 lg:pt-36">
+        <div class="container">
+            <!-- breadcums start -->
+            <div class="container mx-auto pt-20 lg:pt-4 items-center gap-8">
+                <div class="flex flex-wrap items-center">
+                    <a href="produk.html" class="mx-2">
+                        <span class="font-semibold text-sm text-primary hover:text-hover transition duration-100 ease-in-out active:text-hover">Dashboard</span>
+                    </a>
+                    <i class="ri-arrow-right-s-line"></i>
+                    <a href="toko.html" class="mx-2">
+                        <span class="font-semibold text-sm text-primary hover:text-hover transition duration-100 ease-in-out active:text-hover">Toko</span>
+                    </a>
+                    <i class="ri-arrow-right-s-line"></i>
+                    <a href="produk.html" class="mx-2">
+                        <span class="font-semibold text-sm text-primary hover:text-hover transition duration-100 ease-in-out active:text-hover">Manggala</span>
+                    </a>
+                </div>
+            </div>
+            <!-- breadcums end -->
+            <!-- Judul Hero Start -->
+            <div class="w-full px-4 lg:pt-12 pt-16">
+                <div class="max-w-xl mx-auto text-center mb-12">
+                    <h1 class="font-extrabold uppercase text-primary text-xl md:text-2xl lg:text-3xl my-4">Selamat Datang !!</h4>
+                    <p class="text-base md:text-lg lg:text-xl text-primary font-normal">Di Percetakan Manggala Printing Singaraja</p>
+                </div>
+            </div>
+            <!-- Judul Hero End -->
+
+            <!-- Foto Cover Manggala Start -->
+            <div class="w-full pt-6 p-6">
+                <div class="h-48 lg:h-72 rounded-3xl shadow-lg overflow-hidden">
+                    <img src="dist/img/manggala.png" alt="" class="relative object-cover md:object-none lg:object-fill md:object-top w-full h-56 lg:h-auto">
+                </div>
+            </div>
+            <!-- Foto Cover Manggala End -->           
+        </div>
+    </section>
+
+    <!-- Identitas dan Deskripsi Toko Start -->
+    <section id="#" class="pt-4 pb-8 lg:pb-12">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <!-- Identitas Toko Start-->
+                <div class="w-full lg:w-1/3 p-6">
+                    <div class="rounded-3xl shadow-lg flex flex-wrap border py-4 lg:py-12 px-6 mx-auto">
+                        <a href="https://maps.app.goo.gl/z1McSbkzFfNBLE1g8">
+                            <div class="flex text-primary hover:text-hover transition duration-150 ease-in-out px-4 py-4 items-center">
+                                <i class="ri-map-pin-2-fill text-lg"></i>
+                                <h1 class="font-semibold md:text-sm text-xs lg:text-base ml-4">Jalan Leli No 10 Singaraja-Bali</h1>
+                            </div>
+                        </a>
+                        <a href="https://www.instagram.com/manggalasingaraja/?hl=en">
+                            <div class="flex text-primary hover:text-hover transition duration-150 ease-in-out px-4 py-4 items-center">
+                                <i class="ri-instagram-line text-lg"></i>
+                                <h1 class="font-semibold md:text-sm text-xs lg:text-base ml-4">manggalasingaraja</h1>
+                            </div>
+                        </a>
+                        <a href="https://www.facebook.com/manggala.printing/">
+                            <div class="flex text-primary hover:text-hover transition duration-150 ease-in-out px-4 py-4 items-center">
+                                <i class="ri-facebook-fill text-lg"></i>
+                                <h1 class="font-semibold md:text-sm text-xs lg:text-base ml-4">Manggala Singaraja</h1>
+                            </div>
+                        </a>
+                        <a href="https://www.instagram.com/manggalasingaraja/?hl=en">
+                            <div class="flex text-primary hover:text-hover transition duration-150 ease-in-out px-4 py-4 items-center">
+                                <i class="ri-whatsapp-line text-lg"></i>
+                                <h1 class="font-semibold md:text-sm text-xs lg:text-base ml-4">+6282237995101</h1>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- Identitas Toko End-->
+
+                <!-- Deskripsi Toko Start -->
+                <div class="w-full lg:w-2/3 px-6 pt-6 p-6">
+                    <h1 class="font-bold lg:text-lg text-sm  text-primary mb-2">Deskripsi</h1>
+                        <p class="mb-2 text-justify text-sm lg:text-base">Manggala Printing Singaraja adalah sebuah layanan percetakan yang berlokasi di Singaraja, Bali. Percetakan ini menawarkan berbagai layanan cetak untuk memenuhi kebutuhan personal maupun bisnis. Beberapa layanan yang biasanya disediakan oleh percetakan seperti ini meliputi :</p>
+                            <p class="mb-2 text-justify text-sm lg:text-base">1. Menerima cetak buku</p>
+                            <p class="mb-2 text-justify text-sm lg:text-base">2. Menerima cetak piagam/sertifikat</p>
+                            <p class="mb-2 text-justify text-sm lg:text-base">3. Menerima cetak brosur</p>
+                            <p class="mb-2 text-justify text-sm lg:text-base">4. Menerima cetak kartu nama</p>
+                            <p class="mb-2 text-justify text-sm lg:text-base">5. Menerima cetak nota</p>
+                            <p class="mb-2 text-justify text-sm lg:text-base">6. Menerima cetak poster</p>
+                            <p class="mb-2 text-justify text-sm lg:text-base">7. Menerima cetak jurnal</p>
+                            <p class="mb-2 text-justify text-sm lg:text-base">8. Menerima cetak art paper</p>
+                            <p class="mb-2 text-justify text-sm lg:text-base">9. Menerima cetak foto biasa/polaroid</p>
+                            <p class="mb-2 text-justify text-sm lg:text-base">10. Menerima kalkir</p>
+                            <p class="mb-2 text-justify text-sm lg:text-base">11. Menerima jilid mika/mika doff</p>
+                            <p class="mb-2 text-sm lg:text-base">12. Menerima jilid hardcover (skripsi,TA,thesis/disertasi)</p>
+                            <p class="mb-2 text-justify text-sm lg:text-base">13. Menerima jilid spiral kawat/plastik.</p>
+                </div>
+                <!-- Deskripsi Toko End -->
+            </div>
+        </div>
+    </section>
+    <!-- Identitas dan Deskripsi Toko End -->
+
+
+    <!-- Foto Produk Start -->
+    <section class="pt-4">
+        <div class="container p-8">
+            <!-- Judul Section Start -->
+            <div class="w-full px-4">
+                <div class="max-w-xl mx-auto text-center mb-12">
+                    <h1 class="font-extrabold uppercase text-primary text-xl lg:text-2xl my-4">Mau Cetak Apa?</h4>
+                    <p class="text-sm lg:text-base text-primary font-normal">Telusuri Lebih Jauh Tentang Produk Yang Ingin Kamu Cetak !</p>
+                </div>
+            </div>
+            <!-- Judul Section End -->
+
+            <!-- Foto Slide Start -->
+            <div class="flex justify-center">
+                <div class="relative w-full lg:w-4/5 h-auto lg:h-full overflow-hidden rounded-3xl shadow-lg text-center">
+                    <!-- Slide Items -->
+                    <div id="slides" class="flex transition-transform duration-500 ease-in-out transform">
+                        <img src="dist/img/inspirational-quote-written-mug.jpg" alt="Slide 1" class="w-full object-fill">
+                        <img src="dist/img/discussing-colors.jpg" alt="Slide 2" class="w-full">
+                        <img src="dist/img/guest-booking-tour-hotel.jpg" alt="Slide 3" class="w-full">
+                    </div>
+            
+                    <!-- Tombol Navigasi -->
+                    <button id="prev" class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full focus:outline-none">
+                        &#10094;
+                    </button>
+                    <button id="next" class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full focus:outline-none">
+                        &#10095;
+                    </button>
+                </div>               
+            </div>
+            <!-- Foto Slide End -->
+        </div>
+    </section>
+    <!-- Foto Produk End -->
+    
+    <!-- Main Dashboard Start -->
+
+    <section class="pt-14 pb-24">
+        <div class="container">
+            <div class="w-full flex flex-wrap px-4">
+                <!-- 1 -->
+                <div class="w-1/2 md:w-1/3 lg:w-1/4 px-4 text-center">
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+                        <img src="dist/img/produk/mug-today-is-a-good-day.jpg" alt="" class="w-full transition duration-300 ease-in-out hover:scale-110">
+                        <div class="py-8 px-6">
+                            <h3 class="block mb-3 font-bold text-sm md:text-base lg:text-xl text-primary truncate">
+                                Gelas Mug
+                            </h3>
+                            <h1 class="mb-4 font-normal text-primary lg:text-base md:text-sm text-xs">Rp 40.000</h1>
+                            <a href="produkinfo.html" class="font-medium text-xs lg:text-sm md:text-xs text-white bg-primary py-2 px-3 lg:py-2 lg:px-4 rounded-lg hover:bg-hover transition duration-150 ease-in-out">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="w-1/2 md:w-1/3 lg:w-1/4 px-4 text-center">
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+                        <img src="dist/img/produk/mug-today-is-a-good-day.jpg" alt="" class="w-full transition duration-300 ease-in-out hover:scale-110">
+                        <div class="py-8 px-6">
+                            <h3 class="block mb-3 font-bold text-sm md:text-base lg:text-xl text-primary truncate">
+                                Gelas Mug
+                            </h3>
+                            <h1 class="mb-4 font-normal text-primary lg:text-base md:text-sm text-xs">Rp 40.000</h1>
+                            <a href="produkinfo.html" class="font-medium text-xs lg:text-sm md:text-xs text-white bg-primary py-2 px-3 lg:py-2 lg:px-4 rounded-lg hover:bg-hover transition duration-150 ease-in-out">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="w-1/2 md:w-1/3 lg:w-1/4 px-4 text-center">
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+                        <img src="dist/img/produk/mug-today-is-a-good-day.jpg" alt="" class="w-full transition duration-300 ease-in-out hover:scale-110">
+                        <div class="py-8 px-6">
+                            <h3 class="block mb-3 font-bold text-sm md:text-base lg:text-xl text-primary truncate">
+                                Gelas Mug
+                            </h3>
+                            <h1 class="mb-4 font-normal text-primary lg:text-base md:text-sm text-xs">Rp 40.000</h1>
+                            <a href="produkinfo.html" class="font-medium text-xs lg:text-sm md:text-xs text-white bg-primary py-2 px-3 lg:py-2 lg:px-4 rounded-lg hover:bg-hover transition duration-150 ease-in-out">Order Now</a>
+                        </div>
+                    </div>
+                </div> 
+                <!-- 4 -->
+                <div class="w-1/2 md:w-1/3 lg:w-1/4 px-4 text-center">
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+                        <img src="dist/img/produk/mug-today-is-a-good-day.jpg" alt="" class="w-full transition duration-300 ease-in-out hover:scale-110">
+                        <div class="py-8 px-6">
+                            <h3 class="block mb-3 font-bold text-sm md:text-base lg:text-xl text-primary truncate">
+                                Gelas Mug
+                            </h3>
+                            <h1 class="mb-4 font-normal text-primary lg:text-base md:text-sm text-xs">Rp 40.000</h1>
+                            <a href="produkinfo.html" class="font-medium text-xs lg:text-sm md:text-xs text-white bg-primary py-2 px-3 lg:py-2 lg:px-4 rounded-lg hover:bg-hover transition duration-150 ease-in-out">Order Now</a>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </section>
+    <!-- Main Dashboard End -->
+
+     <!-- Footer Start -->
+     <footer class="bg-primary p-36">
+        <div class="container mx-auto">
+            <div class="flex lg:flex-col flex-row justify-center items-center ">
+                <div class="relative">
+                    <a href="home" class="font-light text-base text-white hover:text-hover lg:mx-8">Home</a>
+                    <a href="services" class="font-light text-base text-white hover:text-hover lg:mx-8">Services</a>
+                    <a href="features" class="font-light text-base text-white hover:text-hover lg:mx-8">Features</a>
+                    <a href="market" class="font-light text-base text-white hover:text-hover lg:mx-8">Market</a>
+                    <a href="about" class="font-light text-base text-white hover:text-hover lg:mx-8">About</a>
+                    <a href="about" class="font-light text-base text-white hover:text-hover lg:mx-8">Hubungi Kami</a>
+                </div>
+                <div class="flex items-center justify-center my-8">
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/nyoman_gotama/" role="_blank" class="w-9 h-9 mx-6 rounded-full flex justify-center items-center border border-slate-400 text-slate-300 hover:bg-hover hover:border-hover transition duration-300 ease-in-out hover:text-white">
+                        <svg role="img" width="20" fill="" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <title>Instagram</title>
+                            <path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg>
+                    </a>
+                    <!-- Whatsapp -->
+                    <a href="" role="" class="w-9 h-9 mx-4 rounded-full flex justify-center items-center border border-slate-400 text-slate-300 hover:bg-hover hover:border-hover transition duration-300 ease-in-out hover:text-white" >
+                        <svg version="1.0" width="22" class="fill-current" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512.000000 512.000000"
+                            preserveAspectRatio="xMidYMid meet">
+                            <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                            stroke="none">
+                            <path d="M2375 5114 c-386 -37 -677 -121 -993 -284 -482 -250 -871 -647 -1112
+                            -1135 -93 -187 -136 -302 -185 -486 -60 -232 -78 -373 -79 -629 0 -128 5 -266
+                            12 -320 55 -410 183 -763 398 -1093 l72 -111 -159 -469 c-88 -259 -158 -471
+                            -156 -473 2 -2 220 66 486 151 266 85 487 155 492 155 4 0 45 -23 91 -52 46
+                            -28 142 -80 213 -114 647 -309 1386 -336 2048 -73 750 297 1326 948 1532 1730
+                            63 240 78 371 78 649 0 278 -15 409 -78 649 -242 917 -977 1630 -1905 1847
+                            -156 36 -318 55 -515 58 -110 2 -218 2 -240 0z m-610 -1186 c17 -9 40 -33 52
+                            -55 29 -53 273 -638 280 -674 9 -45 -36 -122 -135 -234 -104 -117 -126 -154
+                            -117 -196 17 -76 248 -383 391 -518 221 -209 555 -408 704 -419 77 -5 104 16
+                            222 172 53 71 109 142 126 158 38 39 95 47 160 23 82 -31 585 -276 621 -303
+                            l34 -25 -6 -106 c-14 -272 -110 -413 -362 -536 -240 -117 -428 -114 -795 13
+                            -494 171 -755 334 -1110 691 -178 178 -304 329 -448 536 -238 340 -329 603
+                            -302 870 22 214 97 372 248 523 73 73 168 103 312 98 61 -2 106 -8 125 -18z"/>
+                            </g>
+                        </svg>
+                    </a>
+                    <!-- Github -->
+                    <a href="https://github.com/GotaKusuma04" role="_blank" class="w-9 h-9 mx-6 rounded-full flex justify-center items-center border border-slate-400 text-slate-300 hover:bg-hover hover:border-hover transition duration-300 ease-in-out hover:text-white">
+                        <svg role="img" width="25" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                    </a>
+                </div>
+                <div class="my-2">
+                    <h1 class="font-light text-base text-slate-300">@2023 GoPrinting, Develope with 🤍</h1>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+    <script src="dist/js/script2.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>

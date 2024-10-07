@@ -12,29 +12,41 @@
 </head>
 
 <body>
-    <section id="login" class="pt-36 pb-16 bg-slate-100">
+    <section id="login" class="pt-36">
         <div class="container">
             <div class="w-full px-4">
-                <div class="max-w-xl mx-auto text-center mb-16">
-                    <h1 class="text-2xl font-bold text-primary">Hello, Please Choose Your Role !</h1>
+                <div class="max-w-xl mx-auto text-center mb-8">
+                    <h1 class="text-3xl font-extrabold text-primary uppercase leading-relaxed">Silahkan Di Pilih Role Anda !</h1>
+                    <p class="text-lg font-medium text-primary leading-relaxed">Pastikan Pilih Role Yang Sesuai Dengan Kebutuhan Anda</p>
                 </div>
-            </div>
-            <div class="w-full px-4 flex flex-wrap justify-center">
-                <a href="login.html">
-                    <div class="mb-12 p-4 mx-6 hover:bg-hover hover:rounded-[32px] hover:transition duration-200 hover:ease-in-out">
-                        <div class="rounded-full shadow-md overflow-hidden">
-                            <img src="dist/img/user.png" alt="" width="280">
-                        </div>
-                        <h3 class="text-xl font-semibold text-primary mt-6 text-center">User</h3>
+                <div class="mt-8">
+                    <div class="flex items-center justify-center gap-16">
+                        <a href="login.html" data-aos="fade-up-right" class="w-1/4 h-full shadow-lg border border-primary hover:border-hover hover:bg-hover text-primary hover:text-white rounded-3xl transition duration-150 ease-in-out cursor-pointer">
+                            <div class="my-8 flex flex-col items-center justify-center">
+                                <img src="dist/img/user.png" alt="" class="w-full">
+                                <h1 class="text-lg font-bold uppercase">User</h1>
+                                <p class="text-center text-base font-light leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus doloribus molestias vitae.</p>
+                            </div>
+                        </a>
+                
+                        <a href="admin.html" data-aos="fade-up-left" class="w-1/4 shadow-lg border border-primary hover:border-hover hover:bg-hover text-primary hover:text-white rounded-3xl transition duration-150 ease-in-out cursor-pointer">
+                            <div class="my-8 flex flex-col items-center justify-center">
+                                <img src="dist/img/admin website.png" alt="" class="w-full">
+                                <h1 class="text-lg font-bold uppercase">Admin Toko</h1>
+                                <p class="text-center text-base font-light leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus doloribus molestias vitae.</p>
+                            </div>
+                        </a>
                     </div>
-                </a>
-                <div class="mb-12 p-4 mx-6 hover:bg-hover hover:rounded-[32px] hover:transition duration-200 hover:ease-in-out">
-                    <div class="rounded-full shadow-md overflow-hidden">
-                        <img src="dist/img/toko.png" alt="" width="280">
-                    </div>
-                    <h3 class="text-xl font-semibold text-primary mt-6 text-center">Admin Toko</h3>
-                </div>
+                </div> 
             </div>
         </div>
     </section>
+
+    <script src="dist/js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
+
+
